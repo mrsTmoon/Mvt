@@ -11,6 +11,7 @@ public class MorseTest {
         Assertions.assertEquals(".... . .-.. .-.. ---", ConvertMorseCode.toMorse("HELLO"));
         Assertions.assertEquals(".-- --- .-. .-.. -..", ConvertMorseCode.toMorse("WORLD"));
     }
+
     @Test
     void testToEnglish() {
         Assertions.assertEquals("HELLO", ConvertMorseCode.toEnglish(".... . .-.. .-.. ---"));
@@ -22,9 +23,9 @@ public class MorseTest {
         Assertions.assertEquals(".... . .-.. .-.. ---", ConvertMorseCode.toMorse("HELLO!"));
     }
 
-   @Test
+    @Test
     void testWordSeparation() {
-      Assertions.assertEquals("- .- -.-. -.- / - --- -- .- ...", ConvertMorseCode.toMorse("TACK TOMAS"));
-       Assertions.assertEquals("TACK TOMAS", ConvertMorseCode.toEnglish("- .- -.-. -.- / - --- -- .- ..."));
+        Assertions.assertEquals("- .- -.-. -.- / - --- -- .- ...", ConvertMorseCode.toMorse("TACK TOMAS"));
+        Assertions.assertEquals("TACK TOMAS", ConvertMorseCode.toEnglish("- .- -.-. -.- / - --- -- .- ..."));
     }
 }
